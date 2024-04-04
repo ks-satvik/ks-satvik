@@ -1,5 +1,10 @@
 # 💫 About Me:
-# Hello, I'm Kumar Satvik Chaudhary 👋<br><br>## 📚 About Me<br>- 🎓 I am a **Computer Science student** passionate about technology and innovation.<br>- 💻 Deeply interested in **Web Development**, **Coding**, and **Artificial Intelligence**.<br>- 🚀 Currently working on developing **projects** aimed at improving and positively impacting people's lives.<br>- 🌱 Always learning and experimenting with new technologies to stay at the forefront of tech trends.<br>- ✍️ In my free time, I love to write blogs about my learning journey in tech.<br><br>## 🌟 My Interests<br>- 🕸️ **Web Development**: Building responsive and user-friendly web applications.<br>- 🤖 **Artificial Intelligence**: Exploring AI to solve real-world problems.<br>- 📝 **Coding**: Enjoy coding in various programming languages and always keen to learn more.<br>- 🛠️ **Project Development**: Focused on creating practical and impactful projects.<br>- 📈 **Data Analysis**: Passionate about extracting insights from data.<br><br>## 🛠 Tech Stack<br>- **Frontend/Backend**: Describe technologies you use like HTML, CSS, JavaScript, Node.js, etc.<br>- **Languages**: List programming languages you are proficient in like Python, Java, C++, etc.<br>- **Frameworks**: Mention any frameworks you work with like React, Angular, TensorFlow, etc.<br>- **Tools**: Share tools you use for development like Git, Docker, VS Code, etc.<br><br>## 🚀 Current Projects<br>- **Project 1**: Brief description (optional link to the project).<br>- **Project 2**: Brief description (optional link to the project).<br>- [More Projects...](Link to your GitHub repositories)<br><br>## 📫 How to Reach Me<br>- **LinkedIn**: [Your LinkedIn profile](Your LinkedIn URL)<br>- **Email**: `your-email@example.com`<br>- **GitHub**: [Your GitHub profile](Your GitHub URL)<br><br>## 💡 Fun Fact<br>- I enjoy [something interesting about you, like a hobby or interest].<br><br>---<br>Feel free to connect with me for collaborations or just a chat about technology and innovation!<br>
+## 📚 About Me
+- 🎓 I am a **Computer Science** student, at Arizona State Univeristy passionate about technology and innovation.
+- 💻 Deeply interested in **Web Development**, **Coding**, and **Artificial Intelligence**.
+- 🚀 Currently working on developing **projects** aimed at improving and positively impacting people's lives.
+- 🌱 Always learning and experimenting with new technologies to stay at the forefront of tech trends.
+- ✍️ In my free time, I love to write blogs about my learning journey in tech.
 
 
 ## 🌐 Socials:
@@ -18,4 +23,4 @@
 ### 🔝 Top Contributed Repo
 ![](https://github-contributor-stats.vercel.app/api?username=ks-satvik&limit=5&theme=nord&combine_all_yearly_contributions=true)
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+
