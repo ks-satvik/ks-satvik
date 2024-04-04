@@ -1,4 +1,4 @@
-# 💫 About Me:
+# Hello World,  This is Kumar Satvik Chaudhary !
 ## 📚 About Me
 - 🎓 I am a **Computer Science** student, at Arizona State Univeristy passionate about technology and innovation.
 - 💻 Deeply interested in **Web Development**, **Coding**, and **Artificial Intelligence**.
