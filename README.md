@@ -1,27 +1,79 @@
-# Hello World,  This is Kumar Satvik Chaudhary !
-## 📚 About Me
-- 🎓 I am a **Computer Science** student, at Arizona State Univeristy passionate about technology and innovation.
-- 💻 Deeply interested in **Web Development**, **Coding**, and **Artificial Intelligence**.
-- 🚀 Currently working on developing **projects** aimed at improving and positively impacting people's lives.
-- 🌱 Always learning and experimenting with new technologies to stay at the forefront of tech trends.
-- ✍️ In my free time, I love to write blogs about my learning journey in tech.
+# Kumar Satvik Chaudhary
 
+MS Computer Science student at Arizona State University and ML/NLP research intern.
 
-## 🌐 Socials:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/kschaudhary04) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/ks.kumarsatvik) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@thepardesivlogger) 
+I build LLM systems you can check: answers that cite their sources, graders that explain their scores, and agents that catch their own mistakes.
 
-# 💻 Tech Stack:
-![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)  ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)  ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-%2300000f.svg?style=for-the-badge&logo=mysql&logoColor=white)![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=ks-satvik&theme=nightowl&hide_border=false&include_all_commits=false&count_private=false)<br/>
-![](https://github-readme-streak-stats.herokuapp.com/?user=ks-satvik&theme=nightowl&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=ks-satvik&theme=nightowl&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+[Google Scholar](https://scholar.google.com/citations?hl=en&user=cb0Qe1sAAAAJ) · [LinkedIn](https://linkedin.com/in/kshchaudhary04) · [Email](mailto:kchaud13@asu.edu)
 
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+> 🏆 **Best Demo Paper Award, CIKM 2025** for CyberBOT, an LLM tutor for cybersecurity courses used by 150+ ASU students.
 
-### 🔝 Top Contributed Repo
-![](https://github-contributor-stats.vercel.app/api?username=ks-satvik&limit=5&theme=nord&combine_all_yearly_contributions=true)
+<br>
 
+## Projects
 
+### [Footnote](https://github.com/ks-satvik/footnote)
+
+**Chat with your documents and check every answer.** Each sentence links to the exact passage it came from, and when your files don't have the answer, Footnote says so instead of guessing.
+
+<a href="https://github.com/ks-satvik/footnote"><img src="https://raw.githubusercontent.com/ks-satvik/footnote/main/docs/screenshot.png" alt="Footnote: ask your documents anything, and every answer cites its source" width="100%"></a>
+
+- Hybrid search (BM25 + embeddings, merged with reciprocal rank fusion) beats either one alone on 61 labelled questions: **MRR 0.74** vs 0.71 and 0.64, **Recall@5 86%**
+- A cross-encoder gate refuses unanswerable questions before any LLM call (**92% balanced accuracy**), and a verifier checks every citation after the answer is written
+- Streams answers over SSE, reads 6 document formats, and ships with 75+ tests, Docker and CI
+
+<sub>Python · FastAPI · React · TypeScript · SQLite · Docker</sub> · [Demo video](https://youtu.be/b_wmAcPnmxA)
+
+### [Tally](https://github.com/ks-satvik/tally-sql-agent)
+
+**Ask a database questions in plain English, safely.** A LangGraph agent writes the SQL, runs it, reads the error if it fails, and repairs its own query.
+
+- Layered guardrails: an sqlglot AST allow-list, read-only connections, an SQLite authorizer and row/time/size budgets block writes, PRAGMA, ATTACH and runaway queries
+- BM25 schema linking with foreign-key join expansion sends the model **2.9 of 11 tables** per question while keeping **100%** of the tables it needs (51-question benchmark)
+- Bring your own CSV, Excel or SQLite files; generated insights are checked against the actual result rows; 300 tests in CI
+
+<sub>Python · LangGraph · FastAPI · React · TypeScript · SQLite</sub>
+
+### Voot
+
+**Accounts payable on autopilot.** Upload an invoice and it's extracted, validated, checked for duplicates and risk-scored before anyone approves it.
+
+- Async pipeline across 5 Docker services: Azure Blob Storage, Storage Queues, Python workers and Azure Document Intelligence
+- 7-stage document lifecycle with role-based access, review workflows, GL account suggestions, audit logging, dashboards and CSV export
+
+<sub>Python · FastAPI · React · TypeScript · PostgreSQL · Azure · Docker</sub>
+
+<br>
+
+## Research
+
+ML & NLP research intern at ASU since January 2025, working on LLMs for education.
+
+**EssayCBM: Rubric-Aligned Concept Bottleneck Models for Transparent Essay Grading**<br>
+**K. S. Chaudhary**, C. Zhao, F. Zhang, Y. H. Tse, G. Agrawal, Y. Deng, H. Liu · *ECML-PKDD 2026* · [Paper](https://arxiv.org/abs/2512.20817) · [Demo](https://youtu.be/TnJDOoZbVYE)<br>
+<sub>Grades essays through 8 rubric concepts like thesis clarity and use of evidence instead of a black box, so an instructor can change one concept score and watch the grade update. Trained on 24K+ essays.</sub>
+
+**CyberBOT: Towards Reliable Cybersecurity Education via Ontology-Grounded Retrieval Augmented Generation**<br>
+C. Zhao, R. De Maria, T. Kumarage, **K. S. Chaudhary**, et al. · *CIKM 2025* · 🏆 Best Demo Paper · [Paper](https://arxiv.org/abs/2504.00389)<br>
+<sub>A RAG tutor that checks its answers against a cybersecurity ontology before showing them. Deployed to 150+ students.</sub>
+
+**SMoA: Improving Multi-agent Large Language Models with Sparse Mixture-of-Agents**<br>
+D. Li, Z. Tan, P. Qian, Y. Li, **K. S. Chaudhary**, L. Hu, J. Shen · *PAKDD 2025* · [Paper](https://arxiv.org/abs/2411.03284)<br>
+<sub>Makes multi-agent LLMs cheaper: a judge agent keeps only the best responses each round, and a moderator stops the discussion once the agents agree.</sub>
+
+<br>
+
+## Also built
+
+**RISC-V emulator in the browser** (capstone, Aug 2025 – May 2026). An RV32I engine with 40+ instructions, single-step debugging and live register/memory views, so students can write assembly without setting up a VM. Includes assignment submission and grading for instructors.<br>
+<sub>React · TypeScript · Python · PostgreSQL · Vercel</sub>
+
+<br>
+
+## Education
+
+**Arizona State University**, 4.0 GPA<br>
+MS Computer Science (accelerated), expected May 2027<br>
+BS Computer Science, minor in Data Science, May 2026
+
+<sub>**Tools I use:** Python, C++, SQL, R · PyTorch, Hugging Face Transformers, scikit-learn, LangChain, LangGraph · FastAPI, React, TypeScript · PostgreSQL, MySQL, MongoDB · Docker, Azure, GCP, GitHub Actions</sub>
