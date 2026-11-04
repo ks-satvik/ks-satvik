@@ -1,0 +1,35 @@
+# Goes at: .github/workflows/receipt.yml
+# Reprints receipt.svg every morning so the date, ticket number and
+# "NOW BUILDING" list (your 3 most recently pushed repos) stay current.
+# Commits are made by github-actions[bot], so they don't touch your contribution graph.
+
+name: Reprint receipt
+
+on:
+  schedule:
+    - cron: "17 14 * * *"   # 07:17 Arizona time, daily
+  workflow_dispatch:         # run it by hand from the Actions tab
+  push:
+    paths: ["receipt.py"]    # reprint whenever you edit the numbers
+
+permissions:
+  contents: write
+
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Print receipt
+        run: python receipt.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add receipt.svg
+          git diff --cached --quiet || { git commit -m "Reprint receipt"; git push; }
